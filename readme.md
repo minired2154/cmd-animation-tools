@@ -10,23 +10,23 @@
 Step 1:
 > 宣告，初始化時輸入的兩個整數分別維 row、column。代表的意義為陣列的最大上限，之後的每一幀都不能超過這個上限。
 
-'''cpp=
+```cpp=
 CMD_ANIME_API anime(10,10);
-'''
+```
 
 Step 2:
 > 定義 transfer table，基本上只要照著 unorder_map<int, string> 的形式插入資料後呼叫 TransferNumberToString 函式即可
 
-'''cpp=
+```cpp=
 unorder_map<int, string> transfer
 transfer[0] = "oo";
 transfer[1] = "xx";
 anime.TransferNumberToString(transfer);
-'''
+```
 
 Step 3:
 > 將下一幀輸入給API，同時給定這一幀的大小。注意：每一幀都必須是二維陣列，並且以二星指標作為函數間傳遞的方式。
 
-'''cpp=
+```cpp=
 anime.show(frame, 10, 10);
-'''
+```
