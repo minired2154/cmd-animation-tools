@@ -1,10 +1,10 @@
 # 介紹
-簡易的 CMD 動畫工具。
+簡易的 CMD 動畫工具。僅適用 C++。
 
 # 使用方法
 注意事項：
 * 每一個畫面都是以整數的二維陣列儲存
-* 陣列中的數字所對應的字元這裡稱為 transfer table，由 unorder_map<int,string> 作為資料結構儲存
+* 陣列中數字所對應的字元這裡稱為 transfer table，由 unorder_map<int,string> 作為資料結構儲存
 	* 因此使用者需要定義自己的 unorder_map
 
 Step 1:
